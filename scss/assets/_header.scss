@@ -1,0 +1,56 @@
+.header {
+    background-color: $whiteColor;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .language{ 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            select {
+                border: none;
+                color: #060606;
+                font-weight: 600;
+            }
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .profile-notification{
+                position: relative;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $blueColor;
+                    border-radius: 50%;
+                    top: 3px;
+                    right: 0;
+                }
+            }
+
+            .profile-avatar{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        }
+
+    }
+}

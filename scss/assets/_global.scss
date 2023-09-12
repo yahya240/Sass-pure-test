@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $whiteColor;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+#app {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 1.5rem;
+}

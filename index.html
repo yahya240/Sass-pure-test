@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrp stylesheet -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- header start -->
+      <section class="header">
+        <div class="logo">
+          <img src="./public/images/logo.svg" alt="logo" >
+        </div>
+
+        <div class="header-details">
+
+          <div class="language">
+            <img src="./public/images/american-flag.svg" alt="american-flag" >
+            <select id="languages" name="languages">
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+              <option value="french">French</option>
+              <option value="german">German</option>
+              <option value="chinese">Chinese</option>
+            </select>
+          </div>
+
+          <div class="profile">
+            <div class="profile-notification">
+              <img src="./public/images/bell-icon.svg" alt="bell-icon" >
+            </div>
+            <div class="profile-avatar">
+              <img src="./public/images/profile-avatar.svg" alt="profile-avatar" >
+              <img src="./public/images/arrow-down.svg" alt="bell-icon" >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- header ends -->
+
+      <!-- main-content starts -->
+      <section class="main-content card">
+        <form class="card-body">
+          <div class="main-content-title">
+            withdraw
+          </div>
+  
+          <div class="main-content-inputs row">
+            <div class="balance col-md-6 col-lg-6 col-sm-6">
+              <h4>Your balance</h4>
+              <h3>16,027$</h3>
+            </div>
+            <div class="form-group col-md-6 col-lg-6 col-sm-6">
+              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="amount you want to withdraw">
+            </div>
+            
+          </div>
+  
+          <div class="main-content-subT-title">
+            <h4>Choose Saved with draw methods</h4>
+          </div>
+  
+          <div class="withdraw-method-cards">
+            <label class="custom-control-label green" for="rd_1">
+              <div class="withdraw-method-card ">
+
+                <div class="method-card-left">
+                  <div class="method-card-icon">
+                    <img src="./public/images/bank-Icon.svg" alt="bank-Icon" >
+                  </div>
+                  <div class="method-card-content">
+                    <p>Bank Name : <span>Bank Name</span></p>
+                    <p>Bank Address :<span>2715 Ash Dr. San Jose, South Dakota 83475</span></p>
+                    <p>Owner :<span> Owner</span></p>
+                    <p>Swift Code : <span>AAAA-BB-CC-123</span></p>
+                    <p>IBAN : <span>GB 12 ABCD 102030 12345678</span></p>
+                  </div>
+                </div>
+
+                <div class="method-card-inputs">
+
+                  <div class="method-card-inputs-options">
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="./public/images/option-icon.svg" alt="option-icon" >
+                    </button>
+                  </div>
+
+                  <div class="method-card-inputs-radio">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rd_1" name="rd" class="custom-control-input" value="Yes">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label class="custom-control-label green" for="rd_2">
+              <div class="withdraw-method-card ">
+
+                <div class="method-card-left">
+                  <div class="method-card-icon">
+                    <img src="./public/images/bank-Icon.svg" alt="bank-Icon" >
+                  </div>
+                  <div class="method-card-content">
+                    <p>wallet Name :  <span>wallet Name</span></p>
+                    <p>Owner :<span> Owner</span></p>
+                    <p>Smobile number :  <span>+966 0592596154</span></p>
+                  </div>
+                </div>
+
+                <div class="method-card-inputs">
+
+                  <div class="method-card-inputs-options">
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="./public/images/option-icon.svg" alt="option-icon" >
+                    </button>
+                  </div>
+
+                  <div class="method-card-inputs-radio">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rd_2" name="rd" class="custom-control-input" value="Yes">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+  
+          <button class="add-method">Add New Method</button>
+        </form>
+      </section>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Are you sure to remove this  method ?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-danger">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main-content ends -->
+    </div>
+    <!-- boostrap and JS imports -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

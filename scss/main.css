@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFFFFF;
+  max-width: 100vw;
+  max-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+#app {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+}
+
+.header {
+  background-color: #FFFFFF;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.header .header-details .language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-details .language select {
+  border: none;
+  color: #060606;
+  font-weight: 600;
+}
+.header .header-details .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.header .header-details .profile .profile-notification {
+  position: relative;
+}
+.header .header-details .profile .profile-notification::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #0177FB;
+  border-radius: 50%;
+  top: 3px;
+  right: 0;
+}
+.header .header-details .profile .profile-avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-content {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.main-content .main-content-inputs {
+  margin-top: 2rem;
+}
+.main-content .main-content-inputs .balance {
+  background-color: #FAFDFF;
+  border-color: #E6E6F4;
+  border-radius: 6px;
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-content .main-content-inputs .balance h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.main-content .main-content-inputs .balance h4 {
+  font-size: 1rem;
+}
+.main-content .main-content-subT-title {
+  margin-top: 2rem;
+}
+.main-content .main-content-subT-title h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.main-content .add-method {
+  margin-top: 2rem;
+  color: #e3343d;
+  background-color: #f5d8da;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: transparent;
+  border-radius: 6px;
+}
+.main-content .withdraw-method-cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+@media only screen and (max-width: 720px) {
+  .main-content .withdraw-method-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.main-content .withdraw-method-cards .withdraw-method-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #F6FCFF;
+  width: 100%;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-left {
+  display: flex;
+  gap: 1rem;
+}
+@media only screen and (max-width: 576px) {
+  .main-content .withdraw-method-cards .withdraw-method-card .method-card-left {
+    flex-direction: column;
+  }
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-content {
+  color: #19224C;
+  font-size: 1rem;
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: -1rem;
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-inputs .method-card-inputs-radio .custom-control-input:checked ~ .custom-control-label::before {
+  color: #FFFFFF;
+  border-color: #7B1FA2;
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-inputs .method-card-inputs-radio .custom-control-input:checked ~ .custom-control-label.red::before {
+  background-color: #e3343d;
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-inputs .method-card-inputs-radio .custom-control-input:checked ~ .custom-control-label.green::before {
+  background-color: #008000;
+}
+.main-content .withdraw-method-cards .withdraw-method-card .method-card-inputs .method-card-inputs-radio .add-method {
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */
